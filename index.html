@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Встановлені / Придбані запчастини / Ремонт</title>
+
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+    }
+
+    body{
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background:#f4f7fb;
+        padding:30px;
+        color:#222;
+    }
+
+    .container{
+        max-width:1200px;
+        margin:0 auto;
+        background:#fff;
+        border-radius:16px;
+        box-shadow:0 10px 30px rgba(0,0,0,0.12);
+        overflow:hidden;
+    }
+
+    .header{
+        background:linear-gradient(135deg,#0057b8,#003b7a);
+        color:#fff;
+        padding:30px;
+        text-align:center;
+    }
+
+    .header h1{
+        font-size:32px;
+        margin-bottom:8px;
+        letter-spacing:1px;
+    }
+
+    .header p{
+        opacity:0.9;
+        font-size:15px;
+    }
+
+    .car-info{
+        width:100%;
+        border-collapse:collapse;
+    }
+
+    .car-info td{
+        padding:15px 20px;
+        border:1px solid #d9e1ec;
+        font-size:15px;
+    }
+
+    .car-info strong{
+        color:#003b7a;
+    }
+
+    .section-title{
+        background:#eef4ff;
+        color:#003b7a;
+        text-align:center;
+        font-size:24px;
+        font-weight:700;
+        padding:18px;
+        border-top:3px solid #0057b8;
+        border-bottom:3px solid #0057b8;
+    }
+
+    .parts-table{
+        width:100%;
+        border-collapse:collapse;
+    }
+
+    .parts-table thead{
+        background:#0057b8;
+        color:white;
+    }
+
+    .parts-table th{
+        padding:14px;
+        font-size:15px;
+        text-transform:uppercase;
+        letter-spacing:0.5px;
+    }
+
+    .parts-table td{
+        padding:12px 14px;
+        border:1px solid #dce4ef;
+    }
+
+    .parts-table tbody tr:nth-child(even){
+        background:#f8fbff;
+    }
+
+    .parts-table tbody tr:hover{
+        background:#e8f1ff;
+    }
+
+    .num{
+        text-align:center;
+        width:70px;
+        font-weight:bold;
+    }
+
+    .qty{
+        text-align:center;
+        width:180px;
+        font-weight:600;
+    }
+
+    .footer{
+        text-align:right;
+        padding:25px;
+        font-size:14px;
+        color:#666;
+    }
+
+    @media print{
+        body{
+            background:white;
+            padding:0;
+        }
+
+        .container{
+            box-shadow:none;
+        }
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <h1>Історія ремонту автомобіля</h1>
+        <p>Встановлені та придбані запчастини</p>
+    </div>
+
+    <table class="car-info">
+        <tr>
+            <td><strong>Модель:</strong> Chevrolet Aveo</td>
+            <td><strong>Рік випуску:</strong> 2005</td>
+        </tr>
+        <tr>
+            <td><strong>VIN:</strong> Y6DSF69YE5B485469</td>
+            <td><strong>Власник:</strong> Директор Хаосу</td>
+        </tr>
+    </table>
+
+    <div class="section-title">
+        Встановлені / Придбані запчастини / Ремонт
+    </div>
+
+    <table class="parts-table">
+        <thead>
+            <tr>
+                <th>№</th>
+                <th>Найменування</th>
+                <th>Кількість / Статус</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr><td class="num">1</td><td>Скоба супорта EuroEx AVEO 2-3 (з направляючими + пильник), EX-BAV639</td><td class="qty">2 шт.</td></tr>
+            <tr><td class="num">2</td><td>Фільтр паливний CHEVROLET EVANDA, LACETTI, MATIZ / DAEWOO LANOS / MATIZ 0.8-2.5i 97-</td><td class="qty">1 шт.</td></tr>
+            <tr><td class="num">3</td><td>Ліхтар задній 222-1909R-LD-AE (правий, без патрона, 4-дверний, до 2007 р.)</td><td class="qty">1 шт.</td></tr>
+            <tr><td class="num">4</td><td>Фільтр повітряний Chevrolet Aveo/Kalos 05-</td><td class="qty">1 шт.</td></tr>
+            <tr><td class="num">5</td><td>Гальмівні колодки передні Aveo 11- (Akebono) (133,2×49×17,5)</td><td class="qty">1 комплект</td></tr>
+            <tr><td class="num">6</td><td>Олива моторна Semi Synthetic SAE 10W40 (5 літрів)</td><td class="qty">1 шт.</td></tr>
+            <tr><td class="num">7</td><td>Фільтр масляний</td><td class="qty">1 шт.</td></tr>
+            <tr><td class="num">8</td><td>Капітальний ремонт двигуна</td><td class="qty">Виконано</td></tr>
+            <tr><td class="num">9</td><td>Патрубок ГУР</td><td class="qty">1 шт.</td></tr>
+            <tr><td class="num">10</td><td>Стійки стабілізатора передні</td><td class="qty">Комплект (2 шт.)</td></tr>
+            <tr><td class="num">11</td><td>Втулки стабілізатора передні</td><td class="qty">Комплект (2 шт.)</td></tr>
+            <tr><td class="num">12</td><td>Тяги рульові внутрішні (ліва + права)</td><td class="qty">Комплект</td></tr>
+            <tr><td class="num">13</td><td>Кермові наконечники (ліва + права)</td><td class="qty">Комплект</td></tr>
+            <tr><td class="num">14</td><td>Подушка двигуна задня/права</td><td class="qty">1 шт.</td></tr>
+            <tr><td class="num">15</td><td>Масла / фільтри</td><td class="qty">Комплект</td></tr>
+            <tr><td class="num">16</td><td>Верхня прокладка ГБЦ</td><td class="qty">1 шт.</td></tr>
+            <tr><td class="num">17</td><td>Стійка амортизатора</td><td class="qty">2 шт.</td></tr>
+            <tr><td class="num">18</td><td>Підшипник амортизаційний</td><td class="qty">2 шт.</td></tr>
+            <tr><td class="num">19</td><td>Заміна мастила в коробці</td><td class="qty">Виконано</td></tr>
+            <tr><td class="num">20</td><td>Обслуговування коробки</td><td class="qty">Виконано</td></tr>
+            <tr><td class="num">21</td><td>Тяги рульові зовнішні</td><td class="qty">Комплект</td></tr>
+        </tbody>
+    </table>
+
+    <div class="footer">
+        Дата оформлення: ____________________
+    </div>
+
+</div>
+
+</body>
+</html>
+</html>
